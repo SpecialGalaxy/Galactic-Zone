@@ -1,0 +1,323 @@
+.buy-btn {
+
+  background:#2563eb;
+
+  color:white;
+
+  border-radius:999px;
+
+  padding:12px;
+
+}
+button {
+
+  margin-top:10px;
+
+  width:100%;
+
+  padding:12px;
+
+  border-radius:10px;
+
+  background:#000;
+
+  color:#0ff;
+
+  border:2px solid #0ff;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  box-shadow:0 0 10px #0ff;
+
+  transition:0.25s;
+
+}
+
+button:hover {
+
+  box-shadow:0 0 20px #0ff, 0 0 40px #0ff;
+
+  transform:scale(1.03);
+
+}
+.bundle {
+
+  background:#ffffff;
+
+  border-radius:16px;
+
+  padding:20px;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+
+}
+
+.bundle h3 {
+
+  margin-top:0;
+
+  margin-bottom:15px;
+
+  text-align:center;
+
+}
+
+.item-row {
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:12px;
+
+  margin-bottom:10px;
+
+  border-radius:10px;
+
+  background:#f1f5f9;
+
+}
+
+.item-row span {
+
+  font-weight:bold;
+
+}
+
+.item-row .price {
+
+  color:#16a34a;
+
+}
+
+.item-row button {
+
+  width:auto;
+
+  padding:8px 14px;
+
+  border-radius:8px;
+
+}
+
+button {
+
+  position: relative;
+
+  overflow: hidden;
+
+  margin-top:10px;
+
+  padding:10px 18px;
+
+  border:none;
+
+  border-radius:10px;
+
+  background:linear-gradient(135deg, #2563eb, #1d4ed8);
+
+  color:#fff;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+/* Hover (mouse over) */
+
+button:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 25px rgba(37,99,235,0.45);
+
+}
+
+/* Click / Tap */
+
+button:active {
+
+  transform: scale(0.95);
+
+  box-shadow: 0 5px 12px rgba(37,99,235,0.6);
+
+}
+
+/* Ripple effect */
+
+button::after {
+
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background: radial-gradient(circle, rgba(255,255,255,0.4) 10%, transparent 11%);
+
+  transform: scale(10);
+
+  opacity:0;
+
+  transition: transform 0.6s, opacity 0.6s;
+
+}
+
+button:active::after {
+
+  transform: scale(0);
+
+  opacity:1;
+
+  transition: 0s;
+
+}
+
+#search {
+
+  width:100%;
+
+  padding:12px;
+
+  border-radius:10px;
+
+  border:2px solid #ccc;
+
+  outline:none;
+
+  transition: all 0.3s ease;
+
+  font-size:15px;
+
+  color:#000;
+
+  background:#fff;
+
+  box-shadow: none;
+
+}
+
+/* Glow effect on focus */
+
+#search:focus {
+
+  border-color: transparent;
+
+  background:#0f172a;
+
+  color:#fff;
+
+  box-shadow: 0 0 10px 2px #0ff, 0 0 20px 4px #f0f, 0 0 30px 6px #ff0;
+
+  animation: rotateGlow 2s linear infinite;
+
+}
+
+/* Rotating glow animation */
+
+@keyframes rotateGlow {
+
+  0% {
+
+    box-shadow: 0 0 10px 2px #0ff, 0 0 20px 4px #f0f, 0 0 30px 6px #ff0;
+
+  }
+
+  25% {
+
+    box-shadow: 0 0 10px 2px #f0f, 0 0 20px 4px #ff0, 0 0 30px 6px #0ff;
+
+  }
+
+  50% {
+
+    box-shadow: 0 0 10px 2px #ff0, 0 0 20px 4px #0ff, 0 0 30px 6px #f0f;
+
+  }
+
+  75% {
+
+    box-shadow: 0 0 10px 2px #f0f, 0 0 20px 4px #ff0, 0 0 30px 6px #0ff;
+
+  }
+
+  100% {
+
+    box-shadow: 0 0 10px 2px #0ff, 0 0 20px 4px #f0f, 0 0 30px 6px #ff0;
+
+  }
+  
+ }
+
+* {
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+body {
+
+  font-family: Arial, sans-serif;
+
+  background: #f8f8f8; /* optional */
+
+  padding: 20px; /* spacing from screen edges */
+
+}
+
+.box {
+
+  background: #fff;
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  margin-bottom: 20px;  /* <-- important */
+
+  box-shadow: 0 0 10px #00ffff;
+
+  transition: all 0.3s ease;
+
+}
+
+button {
+
+  width: 100%;
+
+  padding: 12px;
+
+  font-size: 16px;
+
+  color: white;
+
+  background: #2862f2;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  box-shadow: 0 0 8px #00ffff; /* glow */
+
+  transition: all 0.3s ease;
+
+}
+
+button:hover {
+
+  box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+
+}
