@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Galactic Zone</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
 
 <html lang="en">
 
@@ -65,6 +76,9 @@
     <div class="tab active" onclick="showSection('diamond', event)">💎 Diamonds</div>
 
     <div class="tab" onclick="showSection('robux', event)">🪙 Robux</div>
+    
+    <div class="tab" onclick="showSection('tiktok', event)">
+💰 TikTok</div>
 
   </div>
 
@@ -272,6 +286,56 @@
         </div>
       
       </div>
+    
+    </div>
+    
+    <div id="tiktok" class="hidden">
+  <div class="card">
+    <h3>30 Coins</h3>
+    <p class="price">Rs 100</p>
+    <button onclick="order('30 TikTok Coins')">Buy Now</button>
+
+  </div>
+  <div class="card">
+    <h3>70 Coins</h3>
+    <p class="price">Rs 160</p>
+    <button onclick="order('70 TikTok Coins')">Buy Now</button>
+
+  </div>
+
+  <div class="card">
+    <h3>350 Coins</h3>
+    <p class="price">Rs 680</p>
+    <button onclick="order('350 TikTok Coins')">Buy Now</button>
+
+  </div>
+
+  <div class="card">
+    <h3>700 Coins</h3>
+    <p class="price">Rs 1280</p>
+    <button onclick="order('700 TikTok Coins')">Buy Now</button>
+
+  </div>  
+  <div class="card">
+    <h3>1400 Coins</h3>
+    <p class="price">Rs 2550</p>
+    <button onclick="order('1400 TikTok Coins')">Buy Now</button>
+
+  </div>
+  <div class="card">
+    <h3>3500 Coins</h3>
+    <p class="price">Rs 6300</p>
+    <button onclick="order('3500 TikTok Coins')">Buy Now</button>
+
+  </div>
+  <div class="card">
+    <h3>7000 Coins</h3>
+    <p class="price">Rs 12300</p>
+    <button onclick="order('7000 TikTok Coins')">Buy Now</button>
+    
+  </div>
+      
+</div>
 
 </div>
 
@@ -280,7 +344,7 @@
 
   <div class="grid">
 
-    <div class="card"><h3>BGMI UC</h3><p>Coming Soon</p></div>
+    <div class="card"><h3>Pubg</h3><p>Coming Soon</p></div>
     
     <div class="card"><h3>Blox Fruit</h3><p>Coming Soon</p>
 </div>
@@ -298,6 +362,8 @@
   <p>📧 For purchase details, message on WhatsApp</p>
 
   <p>Delivery Time: 0–5 minute</p>
+  
+  <p>Copyright © 2026. Version-1.2</p>
 
 </footer>
 
@@ -308,6 +374,8 @@
     document.getElementById('diamond').classList.add('hidden');
 
     document.getElementById('robux').classList.add('hidden');
+    
+ document.getElementById('tiktok').classList.add('hidden');
 
     document.getElementById(section).classList.remove('hidden');
 
@@ -347,6 +415,8 @@ function showSection(section) {
   document.getElementById('diamond').classList.add('hidden');
 
   document.getElementById('robux').classList.add('hidden');
+  
+  document.getElementByd('tiktok').classList.add('hidden');
 
   document.getElementById(section).classList.remove('hidden');
 
@@ -388,3 +458,8 @@ function searchItems() {
 
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
